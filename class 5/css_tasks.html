@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tasks</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #7771d4;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 30px 0 15px;
+            color: #555;
+        }
+
+        /* Task 1 */
+        .task1 {
+            width: 380px;
+            height: 260px;
+            margin: auto;
+            padding-top: 25px;
+            background: #f0d8dd;
+            box-sizing: border-box;
+        }
+
+        .outer {
+            width: 300px;
+            height: 220px;
+            margin: auto;
+            padding: 25px;
+            background: #dfeef4;
+            box-sizing: border-box;
+        }
+
+        .middle {
+            width: 250px;
+            height: 170px;
+            margin: auto;
+            padding: 25px;
+            background: #df634f;
+            box-sizing: border-box;
+        }
+
+        .inner {
+            width: 150px;
+            height: 100px;
+            margin: auto;
+            background: #777;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* Task 2 */
+        .task2 {
+            width: 380px;
+            height: 150px;
+            margin: auto;
+            background: #f0d8dd;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5px;
+            padding-top: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-family: Georgia, serif;
+            padding: 10px 22px;
+            border: 2px solid #888;
+        }
+
+        .b1 {
+            background: #f1ed55;
+            border-radius: 12px;
+        }
+
+        .b2 {
+            background: #d87ac2;
+            border-radius: 50%;
+        }
+
+        .b3 {
+            background: #9ad39b;
+            border-radius: 50%;
+        }
+
+        .b4 {
+            background: #d8c87b;
+            border-radius: 0;
+        }
+
+        /* Task 3 */
+        .circle {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background: #f0d8dd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle2 {
+            width: 350px;
+            height: 350px;
+            background: #5fd4d1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle3 {
+            width: 290px;
+            height: 290px;
+            background: #f0ef78;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .circle3 span {
+            margin-top: 5px;
+            color: #555;
+        }
+
+        /* Task 4 */
+        .box {
+            width: 200px;
+            height: 210px;
+            margin: auto;
+            background: #f0d8dd;
+            border-radius: 15px;
+            padding-top: 8px;
+            box-sizing: border-box;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Task-1 --------------------------</h2>
+    <div class="task1">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">Image</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Second Task -------- create using internal css</h2>
+    <div class="task2">
+        <button class="b1">button</button>
+        <button class="b2">button</button>
+        <button class="b3">button</button>
+        <button class="b4">button</button>
+    </div>
+
+    <h2>Task-3--------------------------</h2>
+    <div class="circle">
+        <div class="circle2">
+            <div class="circle3">
+                <span>hiiii...</span>
+            </div>
+        </div>
+    </div>
+
+    <h2>Task-4--------------------------</h2>
+    <div class="box">hi</div>
+
+</body>
+</html>
