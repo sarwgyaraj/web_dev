@@ -42,3 +42,23 @@
             margin: 10px;
             background-color: rgb(147, 152, 122);
         }
+        
+
+        
+        #outer{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: #FFC0CB}
+        #middle{
+            width: 400px;
+            height: 400px;
+                        border-radius: 50%;
+            background-color: rgb(132, 230, 229);
+        }
+        #inner{
+            width: 300px;
+            height: 300px;
+                        border-radius: 50%;
+            background-color: rgb(235, 235, 137);
+        }
