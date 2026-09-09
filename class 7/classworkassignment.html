@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sliding Cards</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f5f8fc;
+        text-align: center;
+      }
+      .main {
+        width: 1000px;
+        margin: 50px auto;
+      }
+      .cards {
+        width: 100%;
+        height: 380px;
+        position: relative;
+      }
+      .card {
+        width: 280px;
+        height: 350px;
+        background-color: white;
+        display: inline-block;
+        margin: 0 10px;
+        border-radius: 20px;
+      }
+      .top {
+        height: 170px;
+        background-color: #6b79e4;
+        padding-top: 20px;
+      }
+
+      .top img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid white;
+      }
+
+      .name {
+        display: block;
+        margin-top: 15px;
+      }
+      .text {
+        display: block;
+        margin:  25px;
+      }
+      .button {
+        display: inline-block;
+        background-color: #5965bd;
+        color: white;
+        padding: 25px;
+        border-radius: 20px;
+      }
+      .arrow {
+        position: absolute;
+        top: 150px;
+      }
+      .left {
+        left: -50px;
+      }
+      .right {
+        right: -50px;
+      }
+      .dots {
+        margin: 10px;
+      }
+      .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+        border-radius: 50%;
+        margin: 4px;
+      }
+      .active {
+        background-color:aquamarine
+        width: 13px;
+        height: 13px;
+      }
+      .heading {
+        display: inline-block;
+        background-color: #838ee6;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="cards">
+        <span class="arrow left">❮</span>
+        <div class="card">
+          <div class="top">
+            <img src="photo-1500648767791-00dcc994a43e.jpg" />
+          </div>
+          <span class="name">David Doe</span>
+          <span class="text">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Creative
+            designer and developer.
+          </span>
+          <span class="button">View More</span>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="photo-1554151228-14d9def656e4.jpg" />
+          </div>
+
+          <span class="name">Sarah Smith</span>
+          <span class="text">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Creative
+            designer and developer.
+          </span>
+
+          <span class="button">View More</span>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img src="photo-1580489944761-15a19d654956.jpg" />
+          </div>
+          <span class="name">James Cole</span>
+          <span class="text">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Creative
+            designer and developer.
+          </span>
+          <span class="button">View More</span>
+        </div>
+        <span class="arrow right">❯</span>
+      </div>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="heading">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </body>
+</html>
