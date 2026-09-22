@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechConf Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .navbar {
+            background-color: #101629;
+            color: white;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .button {
+            background-color: blue;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 25px;
+        }
+
+        .heading p {
+            color: blue;
+        }
+
+        .heading h1 {
+            color: #080b24;
+        }
+
+        .box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 44%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            min-height: 350px;
+        }
+
+        h2, h3 {
+            color: #1111aa;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .radio label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .check label {
+            margin-top: 8px;
+        }
+
+        .submit {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <span class="logo">TechConf</span>
+
+        <a href="#">Home</a>
+        <a href="#">Speakers</a>
+        <a href="#">Schedule</a>
+        <a href="#">Register</a>
+
+        <a href="#" class="button">Register Now</a>
+    </div>
+
+
+    <div class="heading">
+        <p>REGISTER NOW</p>
+        <h1>Conference Registration</h1>
+        <span>Fill in the details below to secure your spot at Tech Conference 2026.</span>
+    </div>
+
+
+    <div>
+
+        <!-- Personal Information -->
+        <div class="box">
+            <h2>Personal Information</h2>
+
+            <label>Full Name <span class="red">*</span></label>
+            <input type="text" placeholder="Enter your full name">
+
+            <label>Email <span class="red">*</span></label>
+            <input type="email" placeholder="example@email.com">
+
+            <label>Phone <span class="red">*</span></label>
+            <input type="tel" placeholder="+91 98765 43210">
+
+            <label>Date of Birth <span class="red">*</span></label>
+            <input type="date">
+
+            <label>Gender <span class="red">*</span></label>
+
+            <div class="radio">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Other</label>
+            </div>
+        </div>
+
+
+        <!-- Conference Preferences -->
+        <div class="box">
+            <h2>Conference Preferences</h2>
+
+            <label>Ticket Type <span class="red">*</span></label>
+
+            <div class="radio">
+                <label><input type="radio" name="ticket"> Student</label>
+                <label><input type="radio" name="ticket"> Professional</label>
+                <label><input type="radio" name="ticket"> VIP</label>
+            </div>
+
+            <label>Areas of Interest <span class="red">*</span></label>
+
+            <div class="check">
+                <label><input type="checkbox"> AI</label>
+                <label><input type="checkbox"> Web Development</label>
+                <label><input type="checkbox"> Cloud</label>
+                <label><input type="checkbox"> Cyber Security</label>
+                <label><input type="checkbox"> Data Science</label>
+            </div>
+
+            <h3>Workshop Selection</h3>
+
+            <label>Select Workshop <span class="red">*</span></label>
+
+            <select>
+                <option>React Advanced Patterns</option>
+                <option>Web Development Basics</option>
+                <option>Cloud Computing</option>
+            </select>
+        </div>
+
+
+        <!-- Account Information -->
+        <div class="box">
+            <h2>Account Information</h2>
+
+            <label>Username <span class="red">*</span></label>
+            <input type="text" placeholder="Choose a username">
+
+            <label>Password <span class="red">*</span></label>
+            <input type="password">
+
+            <label>Confirm Password <span class="red">*</span></label>
+            <input type="password">
+        </div>
+
+
+        <!-- Additional Information -->
+        <div class="box">
+            <h2>Additional Information</h2>
+
+            <label>Why do you want to attend the conference?</label>
+
+            <textarea placeholder="Write your answer here..."></textarea>
+
+            <label>
+                <input type="checkbox">
+                I agree to the <span style="color:blue;">terms and conditions</span>
+                <span class="red">*</span>
+            </label>
+
+            <button class="submit">Submit Registration</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

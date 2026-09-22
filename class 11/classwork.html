@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 400px;
+            border: 2px solid black;
+            display: flex;
+            /* flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; */
+            /* justify-content: baseline; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* justify-content: center;
+            align-items: center; */
+        }
+        #parent div {
+            height: 100px;
+            width: 100px;
+        }
+        #one{
+            background-color: aqua;
+            /* flex-basis: 200px; */
+            /* flex-grow: 1; */
+            flex-shrink: 2;
+        }
+        #two{
+            background-color: chartreuse;
+            /* flex-grow: 2; */
+            flex-shrink: 5;
+        }
+        #three{
+            background-color: darkviolet;
+        }
+        #four{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+    </div>
+</body>
+</html>

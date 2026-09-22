@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dream Home</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #dbe9f2;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Top navbar */
+  c
+  .nav-links li { cursor: pointer; }
+  .nav-links li:hover { text-decoration: underline; }
+
+  /* Property card */
+  .content {
+    padding: 50px 40px 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card {
+    width: 360px;
+  }
+  .image-wrap {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .image-wrap img {
+    width: 100%;
+    display: block;
+  }
+  .for-sale {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #e03b3b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  .heart-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .price-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+
+  .card-body {
+    padding-top: 16px;
+  }
+  .card-body h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .detail-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .view-details-btn {
+    margin-top: 14px;
+    background: #b3184e;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .view-details-btn:hover { background: #93113f; }
+
+  /* Contact us button */
+  .contact-us-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #2e9e4f;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: inherit;
+  }
+  .contact-us-btn:hover { background: #257f41; }
+</style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🏠 Dream Home</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Properties</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="card">
+      <div class="image-wrap">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop" alt="House">
+        <div class="for-sale">FOR SALE</div>
+        <div class="heart-btn">❤️</div>
+        <div class="price-tag">₹50 Lakhs</div>
+      </div>
+
+      <div class="card-body">
+        <h2>Beautiful 2BHK House</h2>
+        <div class="detail-line">📍 Pune, Maharashtra</div>
+        <div class="detail-line">🛏️ 2 Bedrooms</div>
+        <div class="detail-line">🚿 2 Bathrooms</div>
+        <div class="detail-line">📏 1200 sq ft</div>
+        <button class="view-details-btn">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="contact-us-btn">Contact Us</button>
+
+</body>
+</html>

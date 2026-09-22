@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #parent{
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 51px;
+        }
+        div{
+            color: white;
+        }
+        #child_div{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>LOGO</div>
+        <div id="child_div">
+    <div id="one"> About Us</div>
+    <div id="two"> Services</div>
+    <div id="three"> Portfolio </div>
+    <div id="four">Contact us </div>
+    </div>
+    </div>
+</body>
+</html>

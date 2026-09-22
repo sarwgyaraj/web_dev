@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flex-Box-1</title>
+<style>
+  body {
+    margin: 0;
+    background: #faf9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    width: 400px;
+  }
+  .bar {
+    background: red;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  .bottom-row {
+    display: flex;
+  }
+  .left-column {
+    width: 190px;
+    margin-right: 16px;
+  }
+  .green {
+    background: green;
+    height: 140px;
+    margin-bottom: 16px;
+  }
+  .pink {
+    background:pink;
+    height: 70px;
+  }
+  .right-column {
+    width: 190px;
+  }
+  .teal {
+    background:aqua;
+    height: 226px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="bar"></div>
+    <div class="bottom-row">
+      <div class="left-column">
+        <div class="green"></div>
+        <div class="pink"></div>
+      </div>
+      <div class="right-column">
+        <div class="teal"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
