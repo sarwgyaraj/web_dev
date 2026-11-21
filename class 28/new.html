@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 800px;
+            width: 500px;
+            border: 1px solid;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id =box>
+            <h1>TO DO LIST</h1>
+            <input>
+            <button>add task</button>
+            <br>
+        </div>
+    </center>
+    <script>
+        let btn = document.querySelector('button')
+        let inp = document.querySelector('input')
+        let body = document.querySelector('body')
+        let b = document.getElementById('box')
+        btn.onclick = function(){
+            let p = document.createElement('p')
+            p.innerText = inp.value
+            b.append(p)
+            let ed = document.createElement('button')
+            ed.innerText='edit'
+            b.append(ed)
+            ed.onclick = function(){
+                let edt = document.createElement('input')
+                b.append(edt)
+                edt.onclick= function(){
+                    p.innerText=edt.value
+                    b.append(p)
+                
+                }
+                
+
+                
+            }
+            
+            
+        }
+        // p.onclick = function(){
+        //         p.remove(p)
+        //     }
+        
+    </script>
+
+</body>
+</html>

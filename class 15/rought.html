@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #parent{
+            height: 95vh;
+            display: grid;
+            grid-template-columns: 450px 450px 450px;
+            grid-template-rows: 200px 200px 200px 200px;
+            border: 2px solid black;
+        }
+        .one{
+            border: 2px solid rgb(241, 159, 159);
+            margin: 5px;
+        }
+        #one{
+            background-color: rgb(136, 136, 227);
+            grid-row-start: 2;
+        }
+        #two{
+            background-color: rgb(88, 225, 125);
+        }
+        #three{
+            background-color: rgb(251, 251, 133);
+        }
+        #four{      
+            background-color: rgb(70, 82, 85);
+            /* grid-column-start: 2;
+            grid-row-start:2; */
+            /* grid-row: 2/1; */
+            /* grid-row: 1/2; */
+        }
+        #five{
+            background-color: rgb(235, 205, 151);
+        }
+        #six{
+            background-color: rgb(230, 152, 165);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one" class="one"></div>
+        <div id="two" class="one"></div>
+        <div id="three" class="one"></div>
+        <div id="four" class="one"></div>
+        <div id="five" class="one"></div>
+        <div id="six" class="one"></div>
+
+    </div>
+    
+</body>
+</html>

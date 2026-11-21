@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    #parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #main{
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 300px 300px 300px 300px;
+        display: grid;
+        gap: 30px;
+    }
+    .one{
+        border: 2px solid rgb(21, 20, 20);
+    }
+    #one{
+        background: linear-gradient( red, blue);
+    }
+    #two{
+        background: linear-gradient(to right, red, blue);
+    }
+   #three{
+        background: linear-gradient(to left, red, blue);
+    }
+    #four{
+        background: linear-gradient(to top, red, blue);
+    }
+    #five{
+        background: linear-gradient(to bottom, red, blue);
+    }
+    #six{
+        background: linear-gradient(45deg, red, blue);
+    }
+    #seven{
+        background: linear-gradient(to right, red, yellow, blue, green);
+    }
+    #eight{
+        background: linear-gradient(to right, red, yellow, blue, green);
+    }
+</style>
+</head>
+<body>
+<center><h1>CSS GRADIENTS</h1></center>
+    <div id="parent">
+    <div id="main">
+        <div class="one" id="one">LINEAR GRADIENT</div>
+        <div class="one" id="two"> LINEAR RIGHT</div>
+        <div class="one" id="three"> LINEAR LEFT</div>
+        <div class="one" id="four"> LINEAR TOP</div>
+        <div class="one" id="five"> DIAGONAL</div>
+        <div class="one" id="six"> 45 Degree</div>
+        <div class="one" id="seven">MULTIPLE COLORS</div>
+        <div class="one" id="eight">COLOR STOP</div>
+        <div class="one" id="nine">HARD STOP</div>
+        <div class="one" id="ten">RADIAL</div>
+        <div class="one" id="eleven">RADIAL CIRCLE</div>
+        <div class="one" id="twelve">RADIAL MULTIPLE</div>
+        <div class="one" id="thirteen">RADIAL POSITION</div>
+        <div class="one" id="fourteen">EXACT POSITION</div>
+        <div class="one" id="fifteen">CONIC</div>
+        <div class="one" id="sixteen">CONIC DEGREE</div>
+        <div class="one" id="seventeen">CONIC ANGLE</div>
+        <div class="one" id="eighteen">REPEATING LINEAR</div>
+        <div class="one" id="nineteen">REPEATING LINEAR 2</div>
+        <div class="one" id="twenty">REPEATING RADIAL</div>
+        <div class="one" id="twentyone">REPEATING CONIC</div>
+        <div class="one" id="twentytwo">Transparent</div>
+        <div class="one" id="twentythree">Beautiful Gradient</div>
+        <div class="one" id="twentyfour">Sunset</div>
+        <div class="one" id="twentyfive">Ocean</div>
+        <div class="one" id="twentysix">Instagram</div>
+        <div class="one" id=""
+    </div>
+    </div>
+    
+</body>
+</html>

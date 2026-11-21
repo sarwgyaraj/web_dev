@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+    <input>
+    <br>
+    <button>click me</button>
+    <h1></h1> -->
+    <!-- <img height="500px"> -->
+    <button id="dec">-</button>
+    <button id="inc">+</button>
+    <button id="res">reset</button>
+    <h1 id="num">0</h1>
+
+    <script>
+        let numDisplay = document.getElementById("num");
+        let incBtn = document.getElementById("inc");
+        let decBtn = document.getElementById("dec");
+        let resbtn = document.getElementById("res")
+
+        let count = 0;
+
+        incBtn.addEventListener("click", () => {
+        count++;
+        numDisplay.textContent = count;
+        });
+
+        decBtn.addEventListener("click", () => {
+        count--;
+        numDisplay.textContent = count;
+        });
+
+        resbtn.addEventListener("click", () => {
+            count=0;
+            numDisplay.textContent = count;
+        })
+
+        // let h1 = document.querySelector("p")
+        // let inp = document.querySelector("input")
+        // inp.addEventListener("input",function(e){
+        //     console.log(e.target.value);
+        //     let b = document.querySelector("button")
+        //     b.onclick=function(){
+        //     h1.innerText=e.target.value
+        // }
+            
+        // })
+        // let b = document.querySelector("button")
+        // b.onclick=function(){
+        //     h1.innerText=e.target.value
+        // }
+
+        // let h1 = document.querySelector("h1")
+        // let inp = document.querySelector("input")
+        // let b = document.querySelector("button")
+        // let a = true
+        // b.addEventListener("click",function(e){
+
+        //     if(a){
+        //         h1.innerText=inp.value
+        //         a=false
+        //     }
+        //     else{
+        //         h1.innerText=""
+        //         a=true
+        //     }
+        // })
+
+        // let arr =['https://images.unsplash.com/photo-1792027632865-07a747ca9728?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D','https://images.unsplash.com/photo-1792965347276-fa67d1e548d7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D','https://images.unsplash.com/photo-1793120355444-06ec1de0e246?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D']
+        // let img = document.querySelector("img")
+        // let n=0
+        // setInterval(()=>{
+        //     img.setAttribute('src', arr[n])
+        //     n=(n+1)%arr.length
+        // },2000)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            perspective: 900px;
+        }
+        #main{
+            height: 600px;
+            width: 400px;
+            position: relative;
+            margin: 50px auto;
+            transition: 3s;
+            transform-style: preserve-3d;
+        }
+        #one{
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(169, 106, 227);
+            z-index: 1;
+            backface-visibility: hidden;
+        
+        }
+        #two{
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(141, 223, 18);
+            transform: rotateY(180deg);
+    
+        }
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+        img{
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="one"><center> <img src="https://imgs.search.brave.com/Hit9SwhitifM2hkfIvmIaOcTSWywAvq1LF_HubvcGdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2pv/a2UtYmF0dGxlcy9p/bWFnZXMvZC9kZi9H/aWdhY2hhZC5wbmcv/cmV2aXNpb24vbGF0/ZXN0L3NjYWxlLXRv/LXdpZHRoLWRvd24v/NDAwP2NiPTIwMjMw/ODEyMDY0ODM1"></center></div>
+        <div id="two"><img src="https://imgs.search.brave.com/x1iZA4V7e1Ud8x6Cldvpo2V50wf38RhCzM0acmk6EXk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Bf/Xy9pbWFnZXMvMy8z/Ny9QYXRyaWNrX0ph/bmUuanBnL3Jldmlz/aW9uL2xhdGVzdC9z/Y2FsZS10by13aWR0/aC1kb3duLzI2OD9j/Yj0yMDE5MDUwMTAw/MDcyMSZwYXRoLXBy/ZWZpeD1wcm90YWdv/bmlzdA"></div>
+    </div>
+    
+</body>
+</html>

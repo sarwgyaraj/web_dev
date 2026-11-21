@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Moments</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            height: 10vh;
+            padding: 20px 10%;
+        }
+
+        nav h4 {
+            margin: 0;
+            color: gray;
+            letter-spacing: 2px;
+        }
+
+        nav h1 {
+            font-size: 45px;
+            margin: 10px 0 0 0;
+        }
+
+        #big-box {
+            width: 80%;
+            height: 40vh;
+            margin: auto;
+            border: 1px solid rgb(237, 227, 227);
+            border-radius: 20px;
+            opacity: 0.7;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #big-box:hover img {
+            filter: blur(3px);
+            opacity: 0.5;
+        }
+
+        #big-box::after {
+            content: "Moments";
+            position: absolute;
+            left: 20px;
+            bottom: 15px;
+            font-size: 18px;
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        #big-box:hover::after {
+            opacity: 1;
+        }
+
+        #grid {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 180px 180px;
+            gap: 15px;
+        }
+
+        .box {
+            border: 1px solid rgb(237, 227, 227);
+            border-radius: 20px;
+            overflow: hidden;
+            opacity: 0.7;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: 0.5s;
+            display: block;
+        }
+
+        .box:hover img {
+            filter: blur(3px);
+            opacity: 0.5;
+        }
+
+        .box::after {
+            content: "Explore";
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+            font-size: 16px;
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .box:hover::after {
+            opacity: 1;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h4>MY COLLECTION</h4>
+        <h1>Moments.</h1>
+    </nav>
+
+    <div id="big-box">
+        <a href="https://in.pinterest.com/pin/757730706032631221/">
+            <img src="https://i.pinimg.com/1200x/af/62/4d/af624dd16c5af8806d9572f0a870a187.jpg" alt="Image 1">
+        </a>
+    </div>
+
+    <div id="grid">
+
+        <div class="box">
+            <a href="https://i.pinimg.com/1200x/3b/52/9e/3b529ec6e9ab8450496157c2113bbdfb.jpg">
+                <img src="https://i.pinimg.com/1200x/3b/52/9e/3b529ec6e9ab8450496157c2113bbdfb.jpg" alt="Image 2">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://in.pinterest.com/pin/743445850986570773/">
+                <img src="https://i.pinimg.com/736x/84/9a/97/849a971d967e931e2fe4e9dc7dfb2de9.jpg" alt="Image 3">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://in.pinterest.com/pin/9218374231810451/">
+                <img src="https://i.pinimg.com/736x/f4/b5/b2/f4b5b2b982d3c531e44bff47dfe53cd6.jpg" alt="Image 4">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://i.pinimg.com/736x/78/55/19/7855193bbeaf1a153a2760ba9d18cb7e.jpg">
+                <img src="https://i.pinimg.com/736x/78/55/19/7855193bbeaf1a153a2760ba9d18cb7e.jpg" alt="Image 5">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://i.pinimg.com/1200x/8f/da/47/8fda4715d4ddeff69fb1020f51eaa16e.jpg">
+                <img src="https://i.pinimg.com/1200x/8f/da/47/8fda4715d4ddeff69fb1020f51eaa16e.jpg" alt="Image 6">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://i.pinimg.com/736x/93/b6/24/93b624b9ab41d08133ffc2e2517b0ee7.jpg">
+                <img src="https://i.pinimg.com/736x/93/b6/24/93b624b9ab41d08133ffc2e2517b0ee7.jpg" alt="Image 7">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://images.unsplash.com/photo-1789758612870-35c6aa006542?q=80&w=2670&auto=format&fit=crop">
+                <img src="https://images.unsplash.com/photo-1789758612870-35c6aa006542?q=80&w=2670&auto=format&fit=crop" alt="Image 8">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://i.pinimg.com/736x/72/2e/36/722e367130edfe4dedd3bceb194f2ca0.jpg">
+                <img src="https://i.pinimg.com/736x/72/2e/36/722e367130edfe4dedd3bceb194f2ca0.jpg" alt="Image 9">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

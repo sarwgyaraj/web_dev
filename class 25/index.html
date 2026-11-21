@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">hellooo</h1>
+    <h1 class="two"></h1>
+    <h1 class="two"></h1>
+    <h2></h2>
+    <h2></h2>
+    <button id="but">click mee</button>
+    <script>
+        let h = document.getElementById("one")
+        h.style.color="orangered"
+        h.innerText="byeee"
+        let h1 = document.getElementsByClassName("two")
+    
+        for(let i of h1){
+            i.innerText="halo"
+            i.style.color="hotpink"
+        }
+        
+        let arr = document.querySelectorAll("h2")
+        for (let i of arr){
+            i.innerText="kaaaaa"
+            i.style.color="darkred"
+        }
+        let b = document.getElementById("but");
+        let body=document.querySelector("body")
+        let a=true
+        b.onclick=function(){
+            body.style.backgroundColor="#0e7c7b"
+            if (a){
+                body.style.backgroundColor="#0e7c7b"
+                a=false
+            }
+            else{
+                body.style.backgroundColor="rgb(77, 255, 82)"
+                a=true
+            }
+        }
+
+    </script>
+</body>
+</html>

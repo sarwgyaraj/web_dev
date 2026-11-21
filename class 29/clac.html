@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #main {
+            width: 300px;
+            height: 400px;
+            background-color: #f2f2f2;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        #bigO{
+            width: 110px;   
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            position: relative;
+            right: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <input>
+        <div id="1">
+        <button style="background-color: orange;">C</button>
+        <button style="background-color: orange;">**</button>
+        <button style="background-color: orange;">%</button>
+        <button style="background-color: orange;">/</button>
+        </div>
+
+        <div id="2">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button style="background-color: orange;">*</button>
+        </div>
+
+        <div id="3">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button style="background-color: orange;">-</button>
+        </div>
+
+        <div id="4">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button style="background-color: orange;">+</button>
+        </div>
+
+         <div id="4">
+        <button id="bigO">0</button>
+        <button>.</button>
+        <button style="background-color: orange; position: relative; left: 4px;">=</button>
+        <button style="background-color: orange; position: relative; left: 4px;">x</button>
+         </div>
+    </div>
+    <script>
+        let inp = document.querySelector('input')
+        let buttons = document.querySelectorAll('button')
+        for (let btn of buttons){
+            btn.addEventListener('click',function(){
+                let txt = btn.innerText
+                if (txt==='C'){
+                    inp.value=""
+                }
+                else if(txt==='='){
+                    inp.value=eval(inp.value)
+                }
+                else if(txt==='x'){
+                    inp.value=inp.value.slice(0,-1)
+                }
+                else{
+                    inp.value+=txt
+                }
+            })
+        }
+    </script>
+</body>
+</html>

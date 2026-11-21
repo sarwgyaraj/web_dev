@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #parent {
+        display: flex;
+        justify-content: center;
+    }
+
+    #main {
+        margin: 6px;
+        height: 200px;
+        width: 995px;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+
+    #track {
+        display: flex;
+        width: max-content;
+        animation: scrol 10s linear infinite;
+    }
+
+    .grp {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .one {
+        width: 150px;
+        height: 190px;
+        background-color: rgb(129, 240, 242);
+        margin: 6px;
+        flex-shrink: 0;
+    }
+
+    @keyframes scrol {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="main">
+            <div id="track">
+                <div class="grp">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </div>
+
+                <div class="grp">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

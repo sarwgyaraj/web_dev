@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #nb{
+        display: flex;
+        justify-content: space-evenly;
+        height: 100px;
+        background-color: blanchedalmond;
+        margin: 0px;
+        
+    }
+    #one{
+        display: inline-block;
+        padding: 10px;
+        
+        
+
+    }
+    #two{
+        display: inline-block;
+    }
+    #three{
+        display: flex;
+        justify-content: space-evenly;
+        width: 800px;
+        font-size: 20px;
+        padding: 27px;
+        
+    }
+    .one{
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        position: relative;
+        top: 20px;
+        border-radius: 25px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #four{
+        border: 2px black solid;
+        width: 100vw;
+        height: 90vh;
+    }
+    #five{
+        display: inline-block;
+        width: 50vw;
+        height: 90vh;
+    }   
+    .two{
+        width: 300px;
+        height: 65px;
+        position: relative;
+        left: 130px;
+        top: 130px;
+    }
+    #six{
+        position: relative;
+        top:130px;
+        left: 130px;
+        font-size: 50px;
+    }
+    #seven{
+        position: relative;
+        top:170px;
+        left: 130px;
+        font-size: 20px;
+    }
+    .three{
+        display:inline-block;
+        height: 50px;
+        width: 150px;
+        background-color: black;
+        color: white;
+    }
+     .four{
+        display:inline-block;
+        height: 50px;
+        width: 150px;
+        margin: 20px;
+    }
+    #eight {
+        position: relative;
+        top: 150px;
+        left: 130px;
+        padding: 20px;
+    }
+    #twelve{
+        
+    }
+
+
+    #parent {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #main {
+        margin: 6px;
+        height: 60px;
+        width: 100vw;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    #track {
+        display: flex;
+        width: max-content;
+        animation: scrol 20s linear infinite;
+        
+    }
+
+    .grp {
+        display: flex;
+        flex-shrink: 0;
+    }
+    .carousel{
+        background-color: black;
+        color: white;
+        width: 25vw;
+        height: 60px;
+        font-size: 25px;
+        padding: 15px;
+        
+    }
+
+
+    @keyframes scrol {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    #belowc{
+        width: 100vw;
+        height: 800px;
+        display: flex;
+    }
+    #bc1{
+        width: 70vw;
+        height: 800px;
+        font-size: 70px;
+        display: inline-block;
+        position: relative;
+        left: 400px;
+        top: 150px;
+    }
+    #bc2{
+        width: 29vw;
+        height: 800px;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        padding: 50px;
+        padding-top: 250px;
+
+    }
+    #bc11{
+        font-size: 70px;
+        color: black;
+    }
+    #bc12{
+        font-size: 70px;
+        color: red;
+    }
+
+</style>
+</head>
+<body>
+    <div id="nb">
+        <div id="one" class="one">Y.</div>
+            <div id="two">
+                <div id="three">
+                 <div><a href="#">HOME</a></div>
+                 <div><a href="#">ABOUT</a></div>
+                 <div><a href="#">WORK</a></div>
+                 <div><a href="#">CONTACT</a></div>
+                </div>
+            </div>
+        <div><button>LETS TALK</button></div>
+    </div>
+
+
+<div id="four">
+    <div id="five">
+        <div><button class="two">AVAILABLE FOR WORK</button></div>
+        <div id="six"><h1>Creative</h1><i><h1 style="color:red;">Frontend</h1></i><h1>Developer</h1></div>
+        <div id="seven">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur officiis,<br> esse quo nesciunt sit facilis vel consectetur corrupti fuga delectus?</div>
+        <div id="eight"><button class="three">Explore My Work</button><button class="four">Contact Me</button></div>
+    </div>
+    <div id="nine">
+        <div id="ten">
+            <div id="eleven">
+                <div id="twelve">
+                    <div id="circle"></div>
+                    <div id=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="parent">
+        <div id="main">
+            <div id="track">
+                <div class="grp">
+                    <div class="carousel">Web Design</div>
+                    <div class="carousel">Creative UI</div>
+                    <div class="carousel">Responsive Design</div>
+                    <div class="carousel">Frontend Developer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="belowc">
+        <div id="bc1">
+            <div id="bc11">Turning Ideas <br>into</div>
+            <div id="bc12">Beautiful<br> experiences</div>
+        </div>
+        <div id="bc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, doloremque! Reprehenderit nisi magnam <br>
+            vel, unde ex eos quaerat dolorum non atque numquam, iusto dolor quas. Ut odit ratione<br>
+             libero enim eligendi praesentium. Nostrum, atque officia ipsam aut consequatur numquam voluptas at,<br>
+              commodi iste labore iure adipisci aliquid, sed non quaerat! </div>
+    </div>
+
+    
+</body>
+</html>

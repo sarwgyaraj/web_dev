@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+        #main{
+            height: 300px;
+            width: 200px;
+            /* border: 2px solid black; */
+            margin: 50px auto;
+            position: relative;
+            transition: 3s;
+            transform-style: preserve-3d;
+        }
+        #main:hover{
+           transform: rotateY(180deg);
+        }
+        div{
+            color: aliceblue;
+        }
+        #card_one{
+            height: 100%;
+            width: 100%;
+            background: #77f6bd;
+            position: absolute;
+            z-index: 1;
+            backface-visibility: hidden;
+        }
+        #card_two{
+            height: 100%;
+            width: 100%;
+            background: #8077f6;
+            position: absolute;
+            /* z-index: 2; */
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="card_one">Card A</div>
+        <div id="card_two">Card B</div>
+    </div>
+</body>
+</html>

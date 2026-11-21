@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello");
+        const a=10;
+        let b=20;
+        b=40
+        var d= "Sarwgya"
+        var e="Raj"
+        console.log(a+b);
+        console.log(d+" "+e)
+        console.log(`${d} ${e}`);
+        // const f;
+        // console.log(f);Error:-Syntax error
+
+        // var/let f;Error:-undefined
+
+        //print
+        var g=10;
+         //var a 
+         console.log(typeof (g));
+
+         //var me redeclare allowed hai
+            var h=10
+            var h=20
+            console.log(h);
+
+            //let me reassign allowed hai but redeclare allowed nahi hai
+            let i=10
+            i=20
+            console.log(i);
+
+            //const me reassign allowed nahi hai and redeclare allowed nahi hai
+            const j=10
+            //j=20 // This will throw an error
+            console.log(j);
+// variable declaration keyword const,var,let
+//    primitive data types:- number,string,boolean,null,undefined,BigInt
+
+            console.log(5=="5");
+            console.log(5+5);
+            console.log("5"+5);//"55"
+            console.log(5+"5");
+            console.log("5"-5);//0
+            console.log(undefined+undefined);
+            console.log("hello"-5);//nan
+            console.log(true+1);//2
+            console.log(true-1);//0
+            console.log(false+1);//1
+            let l=10;
+            console.log(l++);
+            console.log(--l+l++);
+            console.log((l++)+(--l));
+            console.log(typeof(typeof(l)));
+            p=10;
+            console.log(p);//due to strict and non strict environment/Implicit Global Variable 
+            let z=100;
+            let to=z=="100";
+            console.log(to);
+            
+            
+            
+
+            console.log(10==10); // true
+            console.log(10=="10"); // true
+            console.log(10===10); // true
+            console.log(10==="10"); // false
+            console.log("5"+5); // num ko string me convert kar deta hai
+            console.log("5"-5); // string ko num me convert kar deta hai
+            console.log("5"*5); // string ko num me convert kar deta hai
+            console.log("5"/5); // string ko num me convert kar deta hai
+            console.log("5"==5); // true
+            console.log("5"===5); // false
+            console.log("5"!=5); // false
+            console.log("5"!==5); // true
+            console.log(5>10); // false
+            console.log(5<10); // true
+    </script>
+</body>
+</html>

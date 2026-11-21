@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [1, 2, 3, 4, 5, "hello"];
+      console.log(a[1]);
+
+      console.log([] == []); //non-primitive data type referene is compared not values
+
+      let arr = [1, 2, 3, 4, 5, 6];
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+      }
+
+      for (let i in arr) { //in prints index numbers
+        console.log(i);
+      }
+
+      for (let i in arr) {
+        if (i % 2 == 0) console.log(i + " Even");
+        else console.log(i + " Odd");
+      }
+      let students = {
+        name: "om",
+        lastName: "jain",
+      };
+      console.log(students.name);
+
+      let arr1 = [1, 2, 3, [5, 6]];
+      console.log(arr1[3][0]);
+
+      for (let i = 1; i < 5; i++) {
+        let star = "";
+        for (let j = 1; j <= i; j++) {
+          star = star + "*";
+        }
+        console.log(star);
+      }
+      let n = 4;
+      let nsp = n - 1;
+      let nst = 1;
+
+      for (let i = 1; i <= n; i++) {
+        let str = "";
+        for (let j = 1; j <= nsp; j++) {
+          str += " ";
+        }
+        for (let j = 1; j <= nst; j++) {
+          str += "*";
+        }
+        console.log(str);
+        nsp--;
+        nst++;
+      }
+    </script>
+  </body>
+</html>

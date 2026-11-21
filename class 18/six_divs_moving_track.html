@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moving Track</title>
+
+    <style>
+        body {
+            margin: 30px;
+            background-color: white;
+        }
+        .track {
+            width: 100%;
+            height: 150px;
+            border: 2px solid #333333;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+        }
+
+        .moving-track {
+            display: flex;
+            width: 120%;
+            height: 100%;
+            animation: moveTrack 5s linear infinite;
+        }
+
+        .box {
+            background-color: #78c9c8;
+            border-right: 5px solid white;
+            flex: 1;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        @keyframes moveTrack {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-16.666%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="track">
+        <div class="moving-track">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+</body>
+</html>

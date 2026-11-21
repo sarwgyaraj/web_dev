@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: #000;
+            height: 100vh;
+        }
+        #one{
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(45deg, rgb(96, 196, 42), rgb(65, 158, 225));
+            animation-name: ball1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            top: 400px;
+        }
+        @keyframes ball1{
+            0%{
+                transform: scale(1) translateY(0px);
+                opacity: 0.5;
+            }
+            100%{
+                transform: scale(2) translateY(-20px);
+            }
+        }
+          #two{
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(45deg,rgb(127, 253, 255), rgb(174, 75, 145));
+            animation-name: ball2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 0.5s;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            top: 400px;
+            left: 40px;
+        }
+        @keyframes ball2{
+            0%{
+                transform: scale(1) translateY(0px);
+                opacity: 0.5;
+            }
+            100%{
+                transform: scale(2) translateY(-20px);
+            }
+        }
+          #three{
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(45deg, rgb(159, 249, 191), rgb(167, 94, 240));
+            animation-name: ball3;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 0.75s;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            top: 400px;
+            left: 80px;
+        }
+        @keyframes ball3{
+            0%{
+                transform: scale(1) translateY(0px);
+                opacity: 0.5;
+            }
+            100%{
+                transform: scale(2) translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+   <center>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+   </center>
+</body>
+</html>

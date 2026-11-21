@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;;
+            box-sizing: border-box;
+        }   
+        .carousel {
+            width: 90%;
+            border: 2px solid #332f2f;
+            margin:100px auto;
+            overflow: hidden;
+        }
+        .track {
+            display: flex;
+            animation: scroll 12s linear infinite;
+            width: max-content;
+        }
+        .group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:1em;
+            padding-right: 20px;
+        }
+        #box {
+            height: 30vh;
+            width: 40px;
+            padding: 2vh;
+            background-color: #78c9c8;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid rgb(248,246,246);
+        }
+        @keyframes scroll{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+        .carousel:hover .track{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="track">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+            <div id="box">5</div>
+            <div id="box">6</div>
+        </div>
+    <div class="group">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+            <div id="box">5</div>
+            <div id="box">6</div>
+    </div>
+    </div>
+</body>
+</html>
